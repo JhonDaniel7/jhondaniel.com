@@ -37,6 +37,15 @@ jobs:
           echo "SHA: $GITHUB_SHA"
           echo "Actor: $GITHUB_ACTOR"
           echo "Workflow: $GITHUB_WORKFLOW"
+
+      - name: Check AWS role secret
+        run: |
+          if [ -z "${{ secrets.AWS_ROLE_ARN }}" ]; then
+            echo "AWS_ROLE_ARN is EMPTY"
+            exit 1
+          else
+            echo "AWS_ROLE_ARN is present"
+          fi
           
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v4
