@@ -1,0 +1,73 @@
+{
+  "navbar": {
+    "home": "Home",
+    "services": "Services",
+    "solutions": "Solutions",
+    "about": "About me",
+    "approach": "Approach",
+    "lab": "Lab",
+    "contact": "Contact",
+    "talk": "Let's talk ->"
+  },
+  "hero": {
+    "eyebrow": "IDEAS, PROJECTS, REAL SOLUTIONS",
+    "title": "JHON DANIEL",
+    "subtitle": "Software Developer",
+    "meta": "Web · Backend · Cloud · Tailored solutions",
+    "text": "Tell me what you would like to build or improve in your business. Together we can find the most suitable solution.",
+    "ctaPrimary": "Discover what I can build ->",
+    "ctaSecondary": "Let's talk"
+  },
+  "services": {
+    "eyebrow": "MY SERVICES",
+    "title": "Tailored solutions for your business",
+    "intro": "From your online presence to more advanced solutions, I help you turn ideas into practical tools.",
+    "card1Title": "Professional websites",
+    "card1Text": "Modern, high-performance websites optimized to turn visitors into customers.",
+    "card2Title": "Web Applications",
+    "card2Text": "Custom applications to manage business processes and improve the user experience.",
+    "card3Title": "Backend & APIs",
+    "card3Text": "APIs, business logic, and integrations between complex systems.",
+    "card4Title": "Cloud & Integrations",
+    "card4Text": "Cloud solutions and integrations that make your business faster and more scalable."
+  },
+  "solutions": {
+    "eyebrow": "TECHNOLOGY WITH A PURPOSE",
+    "title": "More than a website. A foundation ready to evolve.",
+    "techEyebrow": "KEY TECHNOLOGIES",
+    "techTitle": "Practical tools for real projects.",
+    "growthTitle": "A journey that grows with you.",
+    "growthToday": "Today",
+    "growthTodayText": "Professional website",
+    "growthTomorrow": "Tomorrow",
+    "growthTomorrowText": "Bookings, payments, customer area",
+    "growthFuture": "In the future",
+    "growthFutureText": "Automations, management, new integrations",
+    "text": "For a very simple website, a CMS may be enough. When a project needs integrated processes, custom features, or room to grow, I use technologies such as Angular, Java / Spring Boot, and AWS cloud services to build solid, flexible solutions ready for new needs.",
+    "extra": "This way, your project can start today as a professional website and evolve over time with new features: customer areas, bookings, payments, document management, automations, dashboards, and integrations with external services.",
+    "highlight": "The goal is to build a solution that grows with your business, without having to start from scratch.",
+    "tech": ["Angular", "Spring Boot", "PostgreSQL", "AWS", "Security", "Scalability", "Flexibility", "Integrations"]
+  },
+  "about": {
+    "eyebrow": "ABOUT ME",
+    "title": "A developer with a practical approach.",
+    "p1": "I am Jhon Daniel, a Software Developer with around 5 years of experience. Throughout my career, I have worked on projects in different sectors, gaining experience in web and backend application development for companies and startups.",
+    "p2": "I enjoy tackling real problems, working with motivated people, and finding concrete solutions that have a measurable impact on business.",
+    "cta": "Learn more"
+  },
+  "stats": {
+    "years": "Years of experience",
+    "sectors": "Main sectors",
+    "web": "Apps and services"
+  },
+  "lab": {
+    "eyebrow": "JHON DANIEL LAB",
+    "title": "More than words. You can try it.",
+    "cta": "Explore the Lab ->"
+  },
+  "footer": {
+    "brand": "JHON DANIEL",
+    "role": "Software Developer",
+    "message": "Digital solutions. Real projects."
+  }
+}

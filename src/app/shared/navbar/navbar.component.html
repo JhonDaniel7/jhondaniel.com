@@ -1,0 +1,67 @@
+<nav class="navbar navbar-expand-lg sticky-top">
+  <div class="container-fluid px-4 px-xl-5">
+    <a class="navbar-brand d-flex align-items-center gap-2" href="#home">
+      <span class="brand-mark">JD</span>
+      <span class="brand-text">
+        <strong>JHON DANIEL</strong>
+        <small>{{ 'footer.role' | translate }}</small>
+      </span>
+    </a>
+
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#mainNavbar"
+      aria-controls="mainNavbar"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-center" id="mainNavbar">
+      <ul class="navbar-nav align-items-center gap-lg-3">
+        <li class="nav-item"><a class="nav-link" href="#home">{{ 'navbar.home' | translate }}</a></li>
+        <li class="nav-item"><a class="nav-link" href="#services">{{ 'navbar.services' | translate }}</a></li>
+        <li class="nav-item"><a class="nav-link" href="#solutions">{{ 'navbar.solutions' | translate }}</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">{{ 'navbar.about' | translate }}</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">{{ 'navbar.approach' | translate }}</a></li>
+        <li class="nav-item"><a class="nav-link" href="#lab">{{ 'navbar.lab' | translate }}</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">{{ 'navbar.contact' | translate }}</a></li>
+      </ul>
+    </div>
+
+    <div class="navbar-actions d-flex align-items-center gap-3">
+      <div class="language-switcher">
+        <button
+          class="lang"
+          [class.active]="currentLanguage === 'it'"
+          [attr.aria-pressed]="currentLanguage === 'it'"
+          type="button"
+          (click)="switchLanguage('it')"
+        >IT</button>
+        <span class="divider">|</span>
+        <button
+          class="lang"
+          [class.active]="currentLanguage === 'es'"
+          [attr.aria-pressed]="currentLanguage === 'es'"
+          type="button"
+          (click)="switchLanguage('es')"
+        >ES</button>
+        <span class="divider">|</span>
+        <button
+          class="lang"
+          [class.active]="currentLanguage === 'en'"
+          [attr.aria-pressed]="currentLanguage === 'en'"
+          type="button"
+          (click)="switchLanguage('en')"
+        >EN</button>
+      </div>
+
+      <button class="btn btn-talk rounded-0 px-3 py-2 fw-semibold" type="button">
+        {{ 'navbar.talk' | translate }}
+      </button>
+    </div>
+  </div>
+</nav>

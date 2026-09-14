@@ -1,0 +1,73 @@
+{
+  "navbar": {
+    "home": "Home",
+    "services": "Servizi",
+    "solutions": "Soluzioni",
+    "about": "Chi sono",
+    "approach": "Approccio",
+    "lab": "Lab",
+    "contact": "Contatti",
+    "talk": "Parliamo →"
+  },
+  "hero": {
+    "eyebrow": "IDEE, PROGETTI, SOLUZIONI REALI",
+    "title": "JHON DANIEL",
+    "subtitle": "Software Developer",
+    "meta": "Web · Backend · Cloud · Soluzioni in misura",
+    "text": "Raccontami cosa vorresti realizzare o migliorare nella tua attività. Insieme possiamo capire qual è la soluzione più adatta.",
+    "ctaPrimary": "Scopri cosa posso realizzare →",
+    "ctaSecondary": "Parliamo"
+  },
+  "services": {
+    "eyebrow": "I MIEI SERVIZI",
+    "title": "Soluzioni su misura per la tua attività",
+    "intro": "Dalla presenza online a soluzioni più evolute, ti aiuto a trasformare le tue idee in strumenti concreti.",
+    "card1Title": "Siti web professionali",
+    "card1Text": "Siti moderni, performanti e ottimizzati per convertire visitatori in clienti.",
+    "card2Title": "Web Application",
+    "card2Text": "Applicazioni su misura per gestire processi aziendali e migliorare l’esperienza utente.",
+    "card3Title": "Backend & API",
+    "card3Text": "Sviluppo di API, logiche di business e integrazioni tra sistemi complessi.",
+    "card4Title": "Cloud & Integrazioni",
+    "card4Text": "Soluzioni cloud e integrazioni che rendono il tuo business più rapido e scalabile."
+  },
+  "solutions": {
+    "eyebrow": "TECNOLOGIA CON UNO SCOPO",
+    "title": "Non solo un sito. Una base pronta a evolvere.",
+    "techEyebrow": "TECNOLOGIE PRINCIPALI",
+    "techTitle": "Strumenti concreti per progetti reali.",
+    "growthTitle": "Un percorso che cresce con te.",
+    "growthToday": "Oggi",
+    "growthTodayText": "Sito professionale",
+    "growthTomorrow": "Domani",
+    "growthTomorrowText": "Prenotazioni, pagamenti, area clienti",
+    "growthFuture": "In futuro",
+    "growthFutureText": "Automazioni, gestione, nuove integrazioni",
+    "text": "Per un sito molto semplice, una soluzione CMS può essere sufficiente. Quando invece il progetto deve integrare processi, funzionalità personalizzate o crescere nel tempo, utilizzo tecnologie come Angular, Java / Spring Boot e cloud AWS, che permettono di costruire soluzioni solide, flessibili e pronte ad accogliere nuove esigenze.",
+    "extra": "In questo modo il tuo progetto può partire oggi come sito professionale e, nel tempo, evolvere con nuove funzionalità: area clienti, prenotazioni, pagamenti, gestione documenti, automazioni, dashboard e integrazioni con servizi esterni.",
+    "highlight": "L’obiettivo è costruire una soluzione che possa crescere insieme alla tua attività, senza dover ricominciare da zero.",
+    "tech": ["Angular", "Spring Boot", "PostgreSQL", "AWS", "Security", "Scalabilità", "Flessibilità", "Integrazioni"]
+  },
+  "about": {
+    "eyebrow": "CHI SONO",
+    "title": "Un developer, con un approccio pratico.",
+    "p1": "Sono Jhon Daniel, Software Developer con circa 5 anni di esperienza. Nel mio percorso professionale ho lavorato su progetti in diversi settori, maturando esperienza nello sviluppo di applicazioni web e backend per aziende e startup.",
+    "p2": "Mi piace affrontare problemi reali, lavorare con persone motivate e trovare soluzioni concrete che abbiano un impatto osservabile nel business.",
+    "cta": "Scopri di più"
+  },
+  "stats": {
+    "years": "Anni di esperienza",
+    "sectors": "Settori principali",
+    "web": "App e servizi"
+  },
+  "lab": {
+    "eyebrow": "JHON DANIEL LAB",
+    "title": "Non solo parole. Puoi provarlo.",
+    "cta": "Esplora il Lab →"
+  },
+  "footer": {
+    "brand": "JHON DANIEL",
+    "role": "Software Developer",
+    "message": "Soluzioni digitali. Progetti reali."
+  }
+}

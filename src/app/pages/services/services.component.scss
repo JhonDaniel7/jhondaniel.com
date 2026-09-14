@@ -1,0 +1,93 @@
+:host {
+  display: block;
+  background: #f7f3ee;
+}
+
+.services-section {
+  padding: 5rem 0 4rem;
+  background: #f7f3ee;
+}
+
+.section-intro {
+  margin-bottom: 1.5rem;
+}
+
+.eyebrow {
+  margin: 0 0 0.75rem;
+  color: #312d29;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.18rem;
+}
+
+.section-intro h2 {
+  margin: 0;
+  font-family: Georgia, 'Times New Roman', serif;
+  color: #171412;
+  font-size: clamp(2.5rem, 3.4vw, 4rem);
+  line-height: 1.04;
+  letter-spacing: -0.05em;
+  max-width: 560px;
+}
+
+.intro-copy {
+  margin: 0;
+  color: rgba(29, 25, 22, 0.8);
+  line-height: 1.7;
+  font-size: 1.02rem;
+  max-width: 520px;
+  margin-left: auto;
+}
+
+.services-grid {
+  margin-top: 1.5rem;
+}
+
+.service-card {
+  height: 100%;
+  padding: 1.75rem 1.2rem 1.5rem;
+  background: rgba(255, 255, 255, 0.18);
+  border: 1px solid rgba(49, 45, 41, 0.12);
+  border-radius: 0.9rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 35px rgba(49, 45, 41, 0.08);
+}
+
+.icon-box {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  margin-bottom: 1rem;
+  border: 1px solid rgba(49, 45, 41, 0.22);
+  border-radius: 0.8rem;
+  font-size: 1.4rem;
+  color: #1d1a18;
+  background: rgba(255, 255, 255, 0.35);
+}
+
+.service-card h3 {
+  margin: 0 0 0.9rem;
+  font-size: 1.45rem;
+  font-weight: 700;
+  color: #171412;
+}
+
+.service-card p {
+  margin: 0;
+  color: rgba(29, 25, 22, 0.72);
+  line-height: 1.7;
+  font-size: 0.98rem;
+}
+
+@media (max-width: 991.98px) {
+  .intro-copy {
+    margin-left: 0;
+    margin-top: 1rem;
+  }
+}
