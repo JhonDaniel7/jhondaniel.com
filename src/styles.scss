@@ -1,0 +1,17 @@
+/* Bootstrap viene caricato da angular.json. Qui metteremo lo stile personalizzato Jhon Daniel. */
+
+:root {
+  --jd-background: #f6f1e9;
+  --jd-text: #211d19;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--jd-background);
+  color: var(--jd-text);
+}
