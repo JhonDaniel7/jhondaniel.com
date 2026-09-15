@@ -1,0 +1,67 @@
+:host {
+  display: block;
+  background: #f3efe8;
+}
+
+.site-footer {
+  border-top: 1px solid rgba(31, 29, 27, 0.12);
+  background: #f3efe8;
+  padding: 1.5rem 0;
+}
+
+.footer-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.brand-block {
+  min-width: 180px;
+}
+
+.brand-mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border: 1px solid rgba(31, 29, 27, 0.7);
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  background: rgba(255, 255, 255, 0.18);
+}
+
+.brand-name {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.12rem;
+  color: #1b1714;
+}
+
+.footer-copy,
+.footer-meta {
+  color: rgba(31, 29, 27, 0.72);
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.footer-meta {
+  min-width: 220px;
+  text-align: right;
+}
+
+@media (max-width: 767.98px) {
+  .footer-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .brand-block,
+  .footer-copy,
+  .footer-meta {
+    min-width: unset;
+    text-align: center;
+  }
+}

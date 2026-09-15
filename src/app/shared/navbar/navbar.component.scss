@@ -1,0 +1,161 @@
+:host {
+  display: block;
+  background: #f8f5f1;
+  border-bottom: 1px solid rgba(33, 29, 25, 0.12);
+}
+
+.navbar {
+  min-height: 48px;
+  padding: 0;
+  background: #f8f5f1;
+}
+
+.container-fluid {
+  min-height: 48px;
+  padding-left: 4.25rem !important;
+  padding-right: 2rem !important;
+}
+
+.navbar-brand {
+  text-decoration: none;
+  color: #1f1d1b;
+}
+
+.brand-mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 40px;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 2.15rem;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.brand-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.05;
+}
+
+.brand-text strong {
+  font-size: 0.72rem;
+  letter-spacing: 0.06rem;
+}
+
+.brand-text small {
+  font-size: 0.58rem;
+  letter-spacing: 0.01rem;
+  opacity: 0.7;
+}
+
+.navbar-nav {
+  gap: 0.4rem;
+}
+
+.nav-link {
+  position: relative;
+  color: #1f1d1b;
+  font-size: 0.7rem;
+  font-weight: 500;
+  padding: 1rem 0.35rem 0.85rem;
+  text-decoration: none;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: #1f1d1b;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  left: 0.45rem;
+  right: 0.45rem;
+  bottom: 0;
+  height: 1px;
+  background: #8e7056;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.2s ease;
+}
+
+.nav-link:hover::after,
+.nav-link:focus::after {
+  transform: scaleX(1);
+}
+
+.navbar-actions {
+  margin-left: 0.75rem;
+}
+
+.language-switcher {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.68rem;
+  letter-spacing: 0.03rem;
+  color: rgba(31, 29, 27, 0.8);
+}
+
+.lang {
+  border: 0;
+  padding: 0;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.lang:hover,
+.lang:focus-visible {
+  opacity: 1;
+}
+
+.lang.active {
+  opacity: 1;
+  font-weight: 700;
+}
+
+.divider {
+  opacity: 0.5;
+}
+
+.btn-talk {
+  min-width: 130px;
+  border: 0;
+  background: #9a7a5b;
+  color: #fff;
+  font-size: 0.7rem;
+  letter-spacing: 0.02rem;
+}
+
+.btn-talk:hover,
+.btn-talk:focus {
+  background: #806448;
+  color: #fff;
+}
+
+@media (max-width: 991.98px) {
+  .container-fluid {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+
+  .navbar-collapse {
+    padding-top: 1rem;
+  }
+
+  .navbar-nav {
+    align-items: flex-start !important;
+  }
+
+  .navbar-actions {
+    width: 100%;
+    justify-content: space-between;
+    margin-left: 0;
+    padding-top: 0.75rem;
+  }
+}
