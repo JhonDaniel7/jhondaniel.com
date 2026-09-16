@@ -29,7 +29,18 @@
     "card3Title": "Backend & APIs",
     "card3Text": "APIs, business logic, and integrations between complex systems.",
     "card4Title": "Cloud & Integrations",
-    "card4Text": "Cloud solutions and integrations that make your business faster and more scalable."
+    "card4Text": "Cloud solutions and integrations that make your business faster and more scalable.",
+    "benefitsEyebrow": "THE BENEFITS FOR YOUR BUSINESS",
+    "benefitsTitle": "More than technology, concrete results",
+    "benefitsIntro": "A website or application is not just a technical project, but a tool that can help your business grow, simplify your work, and present you at your best.",
+    "card5Title": "Does it help you find customers?",
+    "card5Text": "A structured online presence helps people find you, understand your business, and turn visitors into contacts.",
+    "card6Title": "Does it save you time?",
+    "card6Text": "By automating repetitive processes and tasks, you can spend more time on what really matters.",
+    "card7Title": "Does it make you look more professional?",
+    "card7Text": "A polished online presence communicates credibility and shows the value of your business in the right way.",
+    "card8Title": "Does it simplify your work?",
+    "card8Text": "I create tailored tools that reduce manual work, improve workflows, and make daily management easier."
   },
   "solutions": {
     "eyebrow": "TECHNOLOGY WITH A PURPOSE",
@@ -58,16 +69,66 @@
   "stats": {
     "years": "Years of experience",
     "sectors": "Main sectors",
-    "web": "Apps and services"
+    "web": "Application experience"
+  },
+  "experience": {
+    "eyebrow": "EXPERIENCE ACROSS SECTORS",
+    "title": "Technology serving real-world contexts.",
+    "text": "Throughout my career, I have contributed to software projects in different sectors, gaining experience developing digital solutions used in complex and structured environments.",
+    "sectors": {
+      "public": "Public Administration",
+      "banking": "Banking",
+      "insurance": "Insurance",
+      "industry": "Industry",
+      "energy": "Energy & E-Mobility",
+      "business": "Business management"
+    }
   },
   "lab": {
     "eyebrow": "JHON DANIEL LAB",
     "title": "More than words. You can try it.",
-    "cta": "Explore the Lab ->"
+    "cta": "Explore the Lab ->",
+    "modalTitle": "Currently unavailable",
+    "modalMessage": "We are working on the new section.",
+    "modalClose": "Close"
   },
   "footer": {
     "brand": "JHON DANIEL",
     "role": "Software Developer",
     "message": "Digital solutions. Real projects."
+  },
+  "contact": {
+    "eyebrow": "CONTACT",
+    "title": "Let’s talk about your project",
+    "intro": "Have an idea, a question, or want to collaborate? Write to me, I’ll be happy to talk it through.",
+    "formTitle": "Send me a message",
+    "formSubtitle": "Fill out the form and I’ll get back to you soon.",
+    "nameLabel": "Name *",
+    "namePlaceholder": "Your name",
+    "nameError": "Enter a valid name with at least 2 characters and no numbers.",
+    "emailLabel": "Email *",
+    "emailPlaceholder": "Your email",
+    "emailError": "Enter a valid email address.",
+    "subjectLabel": "Subject *",
+    "subjectPlaceholder": "What would you like to discuss?",
+    "subjectError": "Enter a subject with at least 3 characters.",
+    "messageLabel": "Message *",
+    "messagePlaceholder": "Write your message here...",
+    "messageError": "Enter a message with at least 10 characters.",
+    "submit": "Send message",
+    "privacy": "Your data will be handled in accordance with our privacy policy.",
+    "emailTitle": "Contact me by email",
+    "emailSubtitle": "Would you rather write directly? You can email me at:",
+    "responseTitle": "Response time",
+    "responseText": "I usually reply within 24-48 hours.",
+    "projectTitle": "Let’s talk about your project",
+    "projectText": "Tell me about your idea and let’s see how to turn it into a concrete solution.",
+    "collaborationTitle": "Open to collaborations",
+    "collaborationText": "Always happy to discuss new projects and opportunities.",
+    "successTitle": "Message sent",
+    "successMessage": "Thank you for getting in touch. I’ll get back to you as soon as possible.",
+    "successClose": "Close",
+    "modalClose": "Close",
+    "quote": "The best ideas come from the right conversations."
   }
 }

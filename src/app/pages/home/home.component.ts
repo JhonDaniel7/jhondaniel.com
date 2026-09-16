@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component, HostListener, OnInit } from '@angular/core';
 
 import { ServicesComponent } from '../services/services.component';
 import { TranslateModule } from '@ngx-translate/core';
@@ -11,4 +11,27 @@ import { TranslateModule } from '@ngx-translate/core';
   styleUrl: './home.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class HomeComponent {}
+export class HomeComponent implements OnInit {
+  isLabModalOpen = false;
+
+  constructor() {}
+
+  ngOnInit(): void {}
+
+  openLabModal(): void {
+    this.isLabModalOpen = true;
+    document.body.classList.add('modal-open');
+  }
+
+  closeLabModal(): void {
+    this.isLabModalOpen = false;
+    document.body.classList.remove('modal-open');
+  }
+
+  @HostListener('document:keydown.escape')
+  onEscapeKey(): void {
+    if (this.isLabModalOpen) {
+      this.closeLabModal();
+    }
+  }
+}
