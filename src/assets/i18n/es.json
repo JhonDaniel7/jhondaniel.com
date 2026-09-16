@@ -29,7 +29,18 @@
     "card3Title": "Backend y APIs",
     "card3Text": "Desarrollo de APIs, lógica de negocio e integraciones entre sistemas complejos.",
     "card4Title": "Cloud e integraciones",
-    "card4Text": "Soluciones cloud e integraciones que hacen tu negocio más rápido y escalable."
+    "card4Text": "Soluciones cloud e integraciones que hacen tu negocio más rápido y escalable.",
+    "benefitsEyebrow": "LOS BENEFICIOS PARA TU NEGOCIO",
+    "benefitsTitle": "No solo tecnología, sino resultados concretos",
+    "benefitsIntro": "Un sitio web o una aplicación no es solo un proyecto técnico, sino una herramienta que puede ayudarte a hacer crecer tu negocio, simplificar el trabajo y presentarte de la mejor manera.",
+    "card5Title": "¿Te ayuda a encontrar clientes?",
+    "card5Text": "Una presencia online estructurada te ayuda a ser visible, presentar mejor tu negocio y convertir visitantes en contactos.",
+    "card6Title": "¿Te ahorra tiempo?",
+    "card6Text": "Al automatizar procesos y tareas repetitivas, puedes dedicar más tiempo a lo que realmente importa.",
+    "card7Title": "¿Te hace parecer más profesional?",
+    "card7Text": "Una presencia online cuidada transmite credibilidad y muestra el valor de tu negocio de la forma adecuada.",
+    "card8Title": "¿Te simplifica el trabajo?",
+    "card8Text": "Creo herramientas a medida que reducen el trabajo manual, mejoran los procesos y facilitan la gestión diaria."
   },
   "solutions": {
     "eyebrow": "TECNOLOGÍA CON UN PROPÓSITO",
@@ -58,16 +69,66 @@
   "stats": {
     "years": "Años de experiencia",
     "sectors": "Sectores principales",
-    "web": "Apps y servicios"
+    "web": "Experiencia aplicativa"
+  },
+  "experience": {
+    "eyebrow": "EXPERIENCIA EN DIFERENTES SECTORES",
+    "title": "Tecnología al servicio de contextos reales.",
+    "text": "A lo largo de mi trayectoria profesional he contribuido a proyectos de software en diferentes sectores, adquiriendo experiencia en el desarrollo de soluciones digitales utilizadas en contextos complejos y estructurados.",
+    "sectors": {
+      "public": "Administración Pública",
+      "banking": "Banca",
+      "insurance": "Seguros",
+      "industry": "Industria",
+      "energy": "Energía y E-Mobility",
+      "business": "Gestión empresarial"
+    }
   },
   "lab": {
     "eyebrow": "JHON DANIEL LAB",
     "title": "No solo palabras. Puedes probarlo.",
-    "cta": "Explora el Lab ->"
+    "cta": "Explora el Lab ->",
+    "modalTitle": "No disponible por el momento",
+    "modalMessage": "Estamos trabajando en la nueva sección.",
+    "modalClose": "Cerrar"
   },
   "footer": {
     "brand": "JHON DANIEL",
     "role": "Software Developer",
     "message": "Soluciones digitales. Proyectos reales."
+  },
+  "contact": {
+    "eyebrow": "CONTACTO",
+    "title": "Hablemos de tu proyecto",
+    "intro": "¿Tienes una idea, una pregunta o quieres colaborar? Escríbeme, estaré encantado de hablar contigo.",
+    "formTitle": "Envíame un mensaje",
+    "formSubtitle": "Completa el formulario y te responderé lo antes posible.",
+    "nameLabel": "Nombre *",
+    "namePlaceholder": "Tu nombre",
+    "nameError": "Introduce un nombre válido de al menos 2 caracteres y sin números.",
+    "emailLabel": "Email *",
+    "emailPlaceholder": "Tu email",
+    "emailError": "Introduce una dirección de email válida.",
+    "subjectLabel": "Asunto *",
+    "subjectPlaceholder": "¿De qué te gustaría hablar?",
+    "subjectError": "Introduce un asunto de al menos 3 caracteres.",
+    "messageLabel": "Mensaje *",
+    "messagePlaceholder": "Escribe aquí tu mensaje...",
+    "messageError": "Introduce un mensaje de al menos 10 caracteres.",
+    "submit": "Enviar mensaje",
+    "privacy": "Tus datos serán tratados de acuerdo con nuestra política de privacidad.",
+    "emailTitle": "Contáctame por email",
+    "emailSubtitle": "¿Prefieres escribir directamente? Puedes enviarme un email a:",
+    "responseTitle": "Tiempo de respuesta",
+    "responseText": "Normalmente respondo en 24-48 horas.",
+    "projectTitle": "Hablemos de tu proyecto",
+    "projectText": "Cuéntame tu idea y veremos juntos cómo convertirla en una solución concreta.",
+    "collaborationTitle": "Abierto a colaboraciones",
+    "collaborationText": "Siempre encantado de hablar sobre nuevos proyectos y oportunidades.",
+    "successTitle": "Mensaje enviado",
+    "successMessage": "Gracias por contactar. Te responderé lo antes posible.",
+    "successClose": "Cerrar",
+    "modalClose": "Cerrar",
+    "quote": "Las mejores ideas nacen de las conversaciones adecuadas."
   }
 }

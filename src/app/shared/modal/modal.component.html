@@ -1,0 +1,26 @@
+@if (isOpen) {
+  <div class="dynamic-modal-backdrop" role="presentation" (click)="close()">
+    <section
+      class="dynamic-modal"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="dynamic-modal-title"
+      (click)="$event.stopPropagation()"
+    >
+      <button
+        class="dynamic-modal-close"
+        type="button"
+        [attr.aria-label]="buttonText"
+        (click)="close()"
+      >
+        ×
+      </button>
+      <div class="dynamic-modal-mark" aria-hidden="true">✓</div>
+      <h2 id="dynamic-modal-title">{{ title }}</h2>
+      <p>{{ message }}</p>
+      <button class="dynamic-modal-button" type="button" (click)="close()">
+        {{ buttonText }}
+      </button>
+    </section>
+  </div>
+}

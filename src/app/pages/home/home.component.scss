@@ -110,7 +110,7 @@ html {
   width: min(100%, 660px);
   height: 620px;
   border-radius: 1.5rem;
-  background: linear-gradient(135deg, #ece5dc 0%, #e3d8cc 100%);
+  background: #f3efe8;
   box-shadow: inset 0 0 0 1px rgba(60, 47, 36, 0.09);
   overflow: hidden;
 }
@@ -119,7 +119,31 @@ html {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(90deg, rgba(255,255,255,0.08), rgba(0,0,0,0.02));
+  z-index: 1;
+  pointer-events: none;
+  background:
+    linear-gradient(to top, #f3efe8 0%, rgba(243, 239, 232, 0.92) 4%, transparent 19%, transparent 81%, rgba(243, 239, 232, 0.92) 96%, #f3efe8 100%),
+    linear-gradient(to right, #f3efe8 0%, rgba(243, 239, 232, 0.92) 4%, transparent 19%, transparent 81%, rgba(243, 239, 232, 0.92) 96%, #f3efe8 100%);
+}
+
+.visual-card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background: radial-gradient(ellipse at center, transparent 44%, rgba(243, 239, 232, 0.86) 100%);
+}
+
+.hero-photo {
+  position: relative;
+  z-index: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 38%;
+  filter: saturate(0.82) contrast(0.94);
 }
 
 .portrait-wrapper {
