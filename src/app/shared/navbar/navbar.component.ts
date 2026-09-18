@@ -12,9 +12,20 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
 })
 export class NavbarComponent {
   currentLanguage = 'it';
+  isMenuOpen = false;
 
   constructor(private translate: TranslateService) {
     this.currentLanguage = this.translate.currentLang || 'it';
+  }
+
+  toggleMenu(): void {
+    this.isMenuOpen = !this.isMenuOpen;
+  }
+
+  closeMenu(): void {
+    this.isMenuOpen = false;
+    console.log('Navbar menu chiuso');
+    document.getElementById('mainNavbar')?.classList.remove('show');
   }
 
   switchLanguage(language: string): void {

@@ -148,6 +148,14 @@
     padding-top: 1rem;
   }
 
+  .navbar-collapse:not(.show) {
+    display: none !important;
+  }
+
+  .navbar-collapse.show {
+    display: block !important;
+  }
+
   .navbar-nav {
     align-items: flex-start !important;
   }

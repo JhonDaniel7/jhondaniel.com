@@ -11,24 +11,23 @@
     <button
       class="navbar-toggler"
       type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#mainNavbar"
       aria-controls="mainNavbar"
-      aria-expanded="false"
+      [attr.aria-expanded]="isMenuOpen"
       aria-label="Toggle navigation"
+      (click)="toggleMenu()"
     >
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-collapse justify-content-center" id="mainNavbar">
-      <ul class="navbar-nav align-items-center gap-lg-3">
-        <li class="nav-item"><a class="nav-link" routerLink="/" fragment="home">{{ 'navbar.home' | translate }}</a></li>
-        <li class="nav-item"><a class="nav-link" routerLink="/" fragment="services">{{ 'navbar.services' | translate }}</a></li>
-        <li class="nav-item"><a class="nav-link" routerLink="/" fragment="solutions">{{ 'navbar.solutions' | translate }}</a></li>
-        <li class="nav-item"><a class="nav-link" routerLink="/" fragment="about">{{ 'navbar.about' | translate }}</a></li>
-        <li class="nav-item"><a class="nav-link" routerLink="/" fragment="about">{{ 'navbar.approach' | translate }}</a></li>
-        <li class="nav-item"><a class="nav-link" routerLink="/lab">{{ 'navbar.lab' | translate }}</a></li>
-        <li class="nav-item"><a class="nav-link" routerLink="/contact">{{ 'navbar.contact' | translate }}</a></li>
+    <div class="collapse navbar-collapse justify-content-center" id="mainNavbar" [class.show]="isMenuOpen">
+      <ul class="navbar-nav align-items-center gap-lg-3" (click)="closeMenu()">
+        <li class="nav-item"><a class="nav-link" routerLink="/" fragment="home" (click)="closeMenu()">{{ 'navbar.home' | translate }}</a></li>
+        <li class="nav-item"><a class="nav-link" routerLink="/" fragment="services" (click)="closeMenu()">{{ 'navbar.services' | translate }}</a></li>
+        <li class="nav-item"><a class="nav-link" routerLink="/" fragment="solutions" (click)="closeMenu()">{{ 'navbar.solutions' | translate }}</a></li>
+        <li class="nav-item"><a class="nav-link" routerLink="/" fragment="about" (click)="closeMenu()">{{ 'navbar.about' | translate }}</a></li>
+        <li class="nav-item"><a class="nav-link" routerLink="/" fragment="about" (click)="closeMenu()">{{ 'navbar.approach' | translate }}</a></li>
+        <li class="nav-item"><a class="nav-link" routerLink="/lab" (click)="closeMenu()">{{ 'navbar.lab' | translate }}</a></li>
+        <li class="nav-item"><a class="nav-link" routerLink="/contact" (click)="closeMenu()">{{ 'navbar.contact' | translate }}</a></li>
       </ul>
     </div>
 
