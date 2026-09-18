@@ -90,7 +90,14 @@
     "cta": "Explora el Lab ->",
     "modalTitle": "No disponible por el momento",
     "modalMessage": "Estamos trabajando en la nueva sección.",
-    "modalClose": "Cerrar"
+    "modalClose": "Cerrar",
+    "tests": { "second": "SEGUNDO TEST", "third": "TERCER TEST", "fourth": "CUARTO TEST", "last": "ULTIMO TEST" },
+    "document": { "eyebrow": "DOCUMENTOS INTELIGENTES", "title": "Genera y descarga un PDF personalizado", "intro": "Completa los datos y crea un documento listo para descargar. Un ejemplo de cómo puedo automatizar tus procesos y generar documentos a medida.", "tipTitle": "Ahorra tiempo, consigue resultados.", "tipText": "Documentos automáticos, correctos y personalizados. Un proceso sencillo que puede integrarse en tu sitio web o aplicación." },
+    "pdf": { "dataTitle": "Datos del documento", "dataText": "Introduce la información para generar tu PDF.", "previewTitle": "Vista previa del documento", "previewText": "Así se verá tu PDF.", "generate": "Generar PDF", "download": "Descargar PDF" },
+    "forms": { "basicTitle": "Formulario poco claro", "basicText": "Sin validaciones en tiempo real, el usuario no sabe qué ha fallado.", "smartTitle": "Formulario inteligente", "smartText": "Validaciones en tiempo real, mensajes claros y una experiencia fluida.", "submit": "Enviar", "continue": "Continuar" },
+    "booking": { "eyebrow": "RESERVAS ONLINE", "title": "Un cliente reserva. Tú recibes la notificación.", "intro": "Prueba un sistema de reservas sencillo y completo.", "formTitle": "Reservar una cita", "tipText": "Perfecto para consultas, citas, visitas y servicios. Todo es automático.", "confirm": "Confirmar reserva", "confirmed": "¡Reserva confirmada!" },
+    "upload": { "eyebrow": "GESTIÓN DE DOCUMENTOS", "title": "Un empleado carga un documento. Se archiva automáticamente.", "upload": "Cargar un documento", "archived": "Documentos archivados" },
+    "customers": { "eyebrow": "GESTIÓN DE DATOS", "title": "1.000 clientes. Todo bajo control.", "search": "Buscar por nombre, apellido o teléfono...", "reset": "Restablecer filtros", "total": "clientes totales", "shown": "resultados mostrados" }
   },
   "footer": {
     "brand": "JHON DANIEL",

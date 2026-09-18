@@ -1,13 +1,14 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { DecimalPipe } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { TranslateModule } from '@ngx-translate/core';
 
 import { Customer, generateCustomers } from '../../../shared/utils';
 
 @Component({
   selector: 'app-customer-management-test',
   standalone: true,
-  imports: [DecimalPipe, FormsModule],
+  imports: [DecimalPipe, FormsModule, TranslateModule],
   templateUrl: './customer-management-test.component.html',
   styleUrl: './customer-management-test.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,

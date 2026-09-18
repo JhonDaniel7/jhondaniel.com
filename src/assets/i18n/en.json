@@ -90,7 +90,14 @@
     "cta": "Explore the Lab ->",
     "modalTitle": "Currently unavailable",
     "modalMessage": "We are working on the new section.",
-    "modalClose": "Close"
+    "modalClose": "Close",
+    "tests": { "second": "SECOND TEST", "third": "THIRD TEST", "fourth": "FOURTH TEST", "last": "LAST TEST" },
+    "document": { "eyebrow": "SMART DOCUMENTS", "title": "Generate and download a personalized PDF", "intro": "Fill in the details and create a document ready to download. An example of how I can automate your processes and generate tailored documents.", "tipTitle": "Save time, get results.", "tipText": "Automatic, accurate and personalized documents. A simple process that can be integrated into your website or application." },
+    "pdf": { "dataTitle": "Document details", "dataText": "Enter the information to generate your PDF.", "previewTitle": "Document preview", "previewText": "This is what your PDF will look like.", "generate": "Generate PDF", "download": "Download PDF" },
+    "forms": { "basicTitle": "Unclear form", "basicText": "Without real-time validation, users do not know what went wrong.", "smartTitle": "Smart form", "smartText": "Real-time validation, clear messages and a smooth experience.", "submit": "Send", "continue": "Continue" },
+    "booking": { "eyebrow": "ONLINE BOOKINGS", "title": "A client books. You receive the notification.", "intro": "Try a simple and complete booking system.", "formTitle": "Book an appointment", "tipText": "Perfect for consultations, appointments, visits and services. Everything is automatic.", "confirm": "Confirm booking", "confirmed": "Booking confirmed!" },
+    "upload": { "eyebrow": "DOCUMENT MANAGEMENT", "title": "An employee uploads a document. It is archived automatically.", "upload": "Upload a document", "archived": "Archived documents" },
+    "customers": { "eyebrow": "DATA MANAGEMENT", "title": "1,000 customers. Fully under control.", "search": "Search by name, surname or phone number...", "reset": "Reset filters", "total": "total customers", "shown": "results shown" }
   },
   "footer": {
     "brand": "JHON DANIEL",

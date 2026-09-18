@@ -1,8 +1,8 @@
 <section class="upload-test" aria-labelledby="upload-test-title">
   <div class="upload-heading">
     <div>
-      <p class="eyebrow">GESTIONE DOCUMENTI</p>
-      <h2 id="upload-test-title">Un dipendente carica<br />un documento.<br />Viene archiviato automaticamente.</h2>
+      <p class="eyebrow">{{ 'lab.upload.eyebrow' | translate }}</p>
+      <h2 id="upload-test-title">{{ 'lab.upload.title' | translate }}</h2>
       <p>Prova un flusso semplice e sicuro per la gestione dei documenti aziendali.<br />Il file viene controllato, rinominato, classificato e salvato nella cartella corretta.</p>
     </div>
     <aside class="upload-tip"><span class="tip-icon" aria-hidden="true">&#128193;</span><div><strong>Meno lavoro manuale,<br />piu ordine.</strong><p>Automatizza la gestione dei documenti e mantieni tutto organizzato, accessibile e al sicuro.</p></div><ul><li>Upload sicuro</li><li>Controllo del formato</li><li>Rinomina automatica</li><li>Classificazione per categoria</li><li>Salvataggio nel cloud</li></ul></aside>
@@ -10,7 +10,7 @@
 
   <div class="upload-layout">
     <article class="upload-card upload-form-card">
-      <header class="upload-card-heading"><h3>&#8593; Carica un documento</h3><p>Seleziona un file e vedi come viene gestito automaticamente.</p></header>
+      <header class="upload-card-heading"><h3>&#8593; {{ 'lab.upload.upload' | translate }}</h3><p>Seleziona un file e vedi come viene gestito automaticamente.</p></header>
       <label class="file-dropzone" for="document-file"><span class="file-icon" aria-hidden="true">&#128196;</span><strong>{{ selectedFileName || 'Trascina qui il tuo file' }}</strong><small>{{ selectedFileName ? 'File selezionato' : 'oppure' }}</small><span class="file-button">Seleziona un file</span><small>Formati supportati: PDF, DOC, DOCX, PNG (max 10 MB)</small></label>
       <input class="visually-hidden-file" id="document-file" type="file" accept=".pdf,.doc,.docx,.png" (change)="onFileSelected($event)" />
       <form class="upload-form" [formGroup]="uploadForm" (ngSubmit)="uploadDocument()">

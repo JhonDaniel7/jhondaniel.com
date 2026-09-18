@@ -90,7 +90,14 @@
     "cta": "Esplora il Lab →",
     "modalTitle": "Al momento non disponibile",
     "modalMessage": "Stiamo lavorando per la nuova sezione.",
-    "modalClose": "Chiudi"
+    "modalClose": "Chiudi",
+    "tests": { "second": "SECONDO TEST", "third": "TERZO TEST", "fourth": "QUARTO TEST", "last": "ULTIMO TEST" },
+    "document": { "eyebrow": "DOCUMENTI INTELLIGENTI", "title": "Genera e scarica un PDF personalizzato", "intro": "Compila i dati e crea un documento pronto da scaricare. Un esempio di come posso automatizzare i tuoi processi e generare documenti su misura.", "tipTitle": "Risparmia tempo, ottieni risultati.", "tipText": "Documenti automatici, sempre corretti e personalizzati. Un processo semplice che puo essere integrato nel tuo sito o nella tua applicazione." },
+    "pdf": { "dataTitle": "Dati del documento", "dataText": "Inserisci le informazioni per generare il tuo PDF.", "previewTitle": "Anteprima del documento", "previewText": "Ecco come sara il tuo PDF.", "generate": "Genera PDF", "download": "Scarica PDF" },
+    "forms": { "basicTitle": "Formulario poco chiaro", "basicText": "Senza validazioni in tempo reale, l'utente non sa cosa c'e che non va.", "smartTitle": "Formulario intelligente", "smartText": "Validazioni in tempo reale, messaggi chiari e un'esperienza fluida.", "submit": "Invia", "continue": "Continua" },
+    "booking": { "eyebrow": "PRENOTAZIONI ONLINE", "title": "Un cliente prenota. Tu ricevi la notifica.", "intro": "Prova un sistema di prenotazione semplice e completo.", "formTitle": "Prenota un appuntamento", "tipText": "Perfetto per consulenze, appuntamenti, visite e servizi. Tutto e automatico.", "confirm": "Conferma prenotazione", "confirmed": "Prenotazione confermata!" },
+    "upload": { "eyebrow": "GESTIONE DOCUMENTI", "title": "Un dipendente carica un documento. Viene archiviato automaticamente.", "upload": "Carica un documento", "archived": "Documenti archiviati" },
+    "customers": { "eyebrow": "GESTIONE DATI", "title": "1.000 clienti. Tutto sotto controllo.", "search": "Cerca per nome, cognome o numero di telefono...", "reset": "Reimposta filtri", "total": "clienti totali", "shown": "risultati mostrati" }
   },
   "footer": {
     "brand": "JHON DANIEL",
