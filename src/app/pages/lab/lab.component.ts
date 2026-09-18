@@ -4,11 +4,12 @@ import { CustomerManagementTestComponent } from './customer-management-test/cust
 import { DocumentUploadTestComponent } from './document-upload-test/document-upload-test.component';
 import { FormsTestComponent } from './forms-test/forms-test.component';
 import { PdfTestComponent } from './pdf-test/pdf-test.component';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-lab',
   standalone: true,
-  imports: [BookingTestComponent, CustomerManagementTestComponent, DocumentUploadTestComponent, FormsTestComponent, PdfTestComponent],
+  imports: [BookingTestComponent, CustomerManagementTestComponent, DocumentUploadTestComponent, FormsTestComponent, PdfTestComponent, TranslateModule],
   templateUrl: './lab.component.html',
   styleUrl: './lab.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,

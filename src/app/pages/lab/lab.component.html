@@ -3,21 +3,21 @@
     <div class="container lab-container">
       <div class="lab-heading-row">
         <div>
-          <p class="eyebrow">DOCUMENTI INTELLIGENTI</p>
-          <h1 id="lab-title">Genera e scarica un<br />PDF personalizzato</h1>
-          <p class="lab-intro">Compila i dati e crea un documento pronto da scaricare.<br />Un esempio di come posso automatizzare i tuoi processi e generare documenti su misura.</p>
+          <p class="eyebrow">{{ 'lab.document.eyebrow' | translate }}</p>
+          <h1 id="lab-title">{{ 'lab.document.title' | translate }}</h1>
+          <p class="lab-intro">{{ 'lab.document.intro' | translate }}</p>
         </div>
-        <aside class="lab-tip"><span class="tip-icon" aria-hidden="true">i</span><div><h2>Risparmia tempo,<br />ottieni risultati.</h2><p>Documenti automatici, sempre corretti e personalizzati. Un processo semplice che puo essere integrato nel tuo sito o nella tua applicazione.</p></div></aside>
+        <aside class="lab-tip"><span class="tip-icon" aria-hidden="true">i</span><div><h2>{{ 'lab.document.tipTitle' | translate }}</h2><p>{{ 'lab.document.tipText' | translate }}</p></div></aside>
       </div>
 
       <app-pdf-test></app-pdf-test>
-      <div class="lab-divider" role="separator"><span>SECONDO TEST</span></div>
+      <div class="lab-divider" role="separator"><span>{{ 'lab.tests.second' | translate }}</span></div>
       <app-forms-test></app-forms-test>
-      <div class="lab-divider" role="separator"><span>TERZO TEST</span></div>
+      <div class="lab-divider" role="separator"><span>{{ 'lab.tests.third' | translate }}</span></div>
       <app-booking-test></app-booking-test>
-      <div class="lab-divider" role="separator"><span>QUARTO TEST</span></div>
+      <div class="lab-divider" role="separator"><span>{{ 'lab.tests.fourth' | translate }}</span></div>
       <app-document-upload-test></app-document-upload-test>
-      <div class="lab-divider" role="separator"><span>ULTIMO TEST</span></div>
+      <div class="lab-divider" role="separator"><span>{{ 'lab.tests.last' | translate }}</span></div>
       <app-customer-management-test></app-customer-management-test>
 
       <footer class="lab-summary"><div class="summary-icon" aria-hidden="true">&#9678;</div><div class="summary-message"><strong>Un'applicazione non deve solo funzionare.</strong><span>Deve essere semplice da capire e piacevole da usare.</span></div><ul class="summary-list"><li>Validazioni personalizzate</li><li>Messaggi chiari</li><li>Feedback immediato</li><li>Esperienza fluida</li></ul><button class="summary-action" type="button">Scopri altre demo nel Lab <span aria-hidden="true">&#8594;</span></button></footer>

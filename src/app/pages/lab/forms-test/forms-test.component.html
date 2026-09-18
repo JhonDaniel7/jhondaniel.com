@@ -1,6 +1,6 @@
 <div class="form-comparison">
   <article class="demo-card basic-card">
-    <header class="demo-card-header"><span class="state-icon state-error" aria-hidden="true">x</span><div><h2>Formulario poco chiaro</h2><p>Senza validazioni in tempo reale, l'utente non sa cosa c'e che non va.</p></div></header>
+    <header class="demo-card-header"><span class="state-icon state-error" aria-hidden="true">x</span><div><h2>{{ 'lab.forms.basicTitle' | translate }}</h2><p>{{ 'lab.forms.basicText' | translate }}</p></div></header>
     <form class="demo-form" [formGroup]="basicForm" (ngSubmit)="submitBasicForm()" novalidate>
       <label for="basic-name">Nome</label><input id="basic-name" type="text" formControlName="name" />
       <label for="basic-email">Email</label><input id="basic-email" type="text" formControlName="email" />
@@ -12,7 +12,7 @@
     <div class="demo-caption"><strong>Risultato?</strong><span>L'utente non capisce cosa deve correggere e si sente frustrato.</span></div>
   </article>
   <article class="demo-card smart-card">
-    <header class="demo-card-header"><span class="state-icon state-success" aria-hidden="true">&#10003;</span><div><h2>Formulario intelligente</h2><p>Validazioni in tempo reale, messaggi chiari e un'esperienza fluida.</p></div></header>
+    <header class="demo-card-header"><span class="state-icon state-success" aria-hidden="true">&#10003;</span><div><h2>{{ 'lab.forms.smartTitle' | translate }}</h2><p>{{ 'lab.forms.smartText' | translate }}</p></div></header>
     <form class="demo-form smart-form" [formGroup]="smartForm" (ngSubmit)="submitSmartForm()" novalidate>
       <label for="smart-name">Nome e cognome</label><div class="input-state" [class.is-valid]="smartForm.controls.name.valid"><input id="smart-name" type="text" formControlName="name" />@if (smartForm.controls.name.valid) { <span class="field-icon">&#10003;</span> }</div>
       <label for="smart-email">Email</label><div class="input-state" [class.is-invalid]="hasSmartError('email')"><input id="smart-email" type="email" formControlName="email" />@if (hasSmartError('email')) { <span class="field-icon">!</span> }</div>

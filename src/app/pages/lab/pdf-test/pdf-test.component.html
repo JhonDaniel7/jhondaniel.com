@@ -1,6 +1,6 @@
 <section class="document-test" aria-labelledby="document-test-title">
   <article class="document-form-card">
-    <header class="document-card-heading"><h2 id="document-test-title">Dati del documento</h2><p>Inserisci le informazioni per generare il tuo PDF.</p></header>
+    <header class="document-card-heading"><h2 id="document-test-title">{{ 'lab.pdf.dataTitle' | translate }}</h2><p>{{ 'lab.pdf.dataText' | translate }}</p></header>
     <form class="document-form" [formGroup]="documentForm" (ngSubmit)="generateDocument()">
       <label for="document-type">Tipo di documento</label><select id="document-type" formControlName="type"><option>Preventivo</option><option>Fattura</option><option>Report</option></select>
       <label for="document-client-name">Nome cliente <span>*</span></label><input id="document-client-name" type="text" formControlName="clientName" />
