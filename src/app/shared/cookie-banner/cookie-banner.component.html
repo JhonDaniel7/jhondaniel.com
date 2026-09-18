@@ -1,0 +1,19 @@
+@if (analytics.bannerVisible()) {
+  <aside class="cookie-banner" role="dialog" aria-labelledby="cookie-title" aria-describedby="cookie-description">
+    <div class="cookie-copy">
+      <p class="cookie-eyebrow">COOKIE</p>
+      <h2 id="cookie-title">{{ 'cookies.title' | translate }}</h2>
+      <p id="cookie-description">{{ 'cookies.description' | translate }}</p>
+    </div>
+
+    @if (analytics.preferencesVisible()) {
+      <div class="cookie-preferences">
+        <div class="cookie-option"><div><strong>{{ 'cookies.necessaryTitle' | translate }}</strong><span>{{ 'cookies.alwaysActive' | translate }}</span></div><strong>{{ 'cookies.active' | translate }}</strong></div>
+        <label class="cookie-option cookie-toggle"><div><strong>{{ 'cookies.analyticsTitle' | translate }}</strong><span>{{ 'cookies.analyticsDescription' | translate }}</span></div><input type="checkbox" [(ngModel)]="analyticsChoice" /><span class="toggle-control"></span></label>
+      </div>
+      <div class="cookie-actions"><button type="button" class="cookie-button secondary" (click)="savePreferences()">{{ 'cookies.save' | translate }}</button></div>
+    } @else {
+      <div class="cookie-actions"><button type="button" class="cookie-button secondary" (click)="reject()">{{ 'cookies.reject' | translate }}</button><button type="button" class="cookie-button secondary" (click)="openPreferences()">{{ 'cookies.customize' | translate }}</button><button type="button" class="cookie-button primary" (click)="accept()">{{ 'cookies.accept' | translate }}</button></div>
+    }
+  </aside>
+}

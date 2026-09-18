@@ -9,6 +9,19 @@
     "contact": "Contatti",
     "talk": "Parliamo →"
   },
+  "cookies": {
+    "title": "La tua privacy conta",
+    "description": "Utilizzo cookie necessari per il funzionamento del sito e, con il tuo consenso, cookie analitici per capire come viene utilizzato e migliorarlo.",
+    "reject": "Rifiuta",
+    "customize": "Personalizza",
+    "accept": "Accetta",
+    "necessaryTitle": "Cookie necessari",
+    "alwaysActive": "Sempre attivi",
+    "active": "Attivi",
+    "analyticsTitle": "Cookie analitici",
+    "analyticsDescription": "Aiutano a capire come viene utilizzato il sito.",
+    "save": "Salva preferenze"
+  },
   "hero": {
     "eyebrow": "IDEE, PROGETTI, SOLUZIONI REALI",
     "title": "JHON DANIEL",

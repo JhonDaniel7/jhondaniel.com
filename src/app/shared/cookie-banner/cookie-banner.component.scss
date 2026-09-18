@@ -1,0 +1,21 @@
+:host { position: fixed; right: 1rem; bottom: 1rem; left: 1rem; z-index: 2000; display: block; pointer-events: none; }
+.cookie-banner { display: flex; align-items: flex-end; justify-content: space-between; gap: 1.5rem; max-width: 980px; margin: 0 auto; padding: 1.1rem 1.25rem; border: 1px solid rgba(49, 45, 41, 0.14); border-radius: 0.65rem; background: #f7f3ee; box-shadow: 0 14px 36px rgba(49, 45, 41, 0.16); pointer-events: auto; }
+.cookie-copy { max-width: 650px; }
+.cookie-eyebrow { margin: 0 0 0.35rem; color: #806448; font-size: 0.65rem; font-weight: 700; letter-spacing: 0.14rem; }
+.cookie-copy h2 { margin: 0 0 0.4rem; color: #171412; font-family: Georgia, 'Times New Roman', serif; font-size: 1.35rem; }
+.cookie-copy p { margin: 0; color: rgba(29, 25, 22, 0.72); font-size: 0.78rem; line-height: 1.45; }
+.cookie-actions { display: flex; flex-wrap: wrap; gap: 0.45rem; justify-content: flex-end; }
+.cookie-button { min-width: 5.4rem; padding: 0.55rem 0.8rem; border: 1px solid rgba(49, 45, 41, 0.25); border-radius: 0.3rem; cursor: pointer; font: inherit; font-size: 0.7rem; font-weight: 600; }
+.cookie-button.secondary { background: transparent; color: #332920; }
+.cookie-button.primary { border-color: #6b4c2e; background: #6b4c2e; color: #fff; }
+.cookie-preferences { display: grid; gap: 0.45rem; min-width: 280px; }
+.cookie-option { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 0.6rem 0.75rem; border: 1px solid rgba(49, 45, 41, 0.1); border-radius: 0.35rem; background: rgba(255, 255, 255, 0.35); font-size: 0.7rem; }
+.cookie-option div { display: flex; flex-direction: column; gap: 0.15rem; }
+.cookie-option span { color: rgba(29, 25, 22, 0.62); font-size: 0.62rem; }
+.cookie-toggle { cursor: pointer; }
+.cookie-toggle input { position: absolute; opacity: 0; }
+.toggle-control { position: relative; width: 2.2rem; height: 1.2rem; flex: 0 0 2.2rem; border-radius: 1rem; background: #b8aa9b; }
+.toggle-control::after { position: absolute; top: 0.18rem; left: 0.18rem; width: 0.84rem; height: 0.84rem; border-radius: 50%; background: #fff; content: ''; transition: transform 0.2s ease; }
+.cookie-toggle input:checked + .toggle-control { background: #806448; }
+.cookie-toggle input:checked + .toggle-control::after { transform: translateX(1rem); }
+@media (max-width: 700px) { :host { right: 0.65rem; bottom: 0.65rem; left: 0.65rem; } .cookie-banner { align-items: stretch; flex-direction: column; gap: 1rem; padding: 1rem; } .cookie-actions { justify-content: stretch; } .cookie-button { flex: 1; } .cookie-preferences { min-width: 0; } }
