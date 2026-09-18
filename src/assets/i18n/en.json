@@ -9,6 +9,19 @@
     "contact": "Contact",
     "talk": "Let's talk ->"
   },
+  "cookies": {
+    "title": "Your privacy matters",
+    "description": "I use necessary cookies for the site to work and, with your consent, analytics cookies to understand how it is used and improve it.",
+    "reject": "Reject",
+    "customize": "Customize",
+    "accept": "Accept",
+    "necessaryTitle": "Necessary cookies",
+    "alwaysActive": "Always active",
+    "active": "Active",
+    "analyticsTitle": "Analytics cookies",
+    "analyticsDescription": "Help understand how the site is used.",
+    "save": "Save preferences"
+  },
   "hero": {
     "eyebrow": "IDEAS, PROJECTS, REAL SOLUTIONS",
     "title": "JHON DANIEL",
