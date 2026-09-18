@@ -1,0 +1,36 @@
+<section class="upload-test" aria-labelledby="upload-test-title">
+  <div class="upload-heading">
+    <div>
+      <p class="eyebrow">GESTIONE DOCUMENTI</p>
+      <h2 id="upload-test-title">Un dipendente carica<br />un documento.<br />Viene archiviato automaticamente.</h2>
+      <p>Prova un flusso semplice e sicuro per la gestione dei documenti aziendali.<br />Il file viene controllato, rinominato, classificato e salvato nella cartella corretta.</p>
+    </div>
+    <aside class="upload-tip"><span class="tip-icon" aria-hidden="true">&#128193;</span><div><strong>Meno lavoro manuale,<br />piu ordine.</strong><p>Automatizza la gestione dei documenti e mantieni tutto organizzato, accessibile e al sicuro.</p></div><ul><li>Upload sicuro</li><li>Controllo del formato</li><li>Rinomina automatica</li><li>Classificazione per categoria</li><li>Salvataggio nel cloud</li></ul></aside>
+  </div>
+
+  <div class="upload-layout">
+    <article class="upload-card upload-form-card">
+      <header class="upload-card-heading"><h3>&#8593; Carica un documento</h3><p>Seleziona un file e vedi come viene gestito automaticamente.</p></header>
+      <label class="file-dropzone" for="document-file"><span class="file-icon" aria-hidden="true">&#128196;</span><strong>{{ selectedFileName || 'Trascina qui il tuo file' }}</strong><small>{{ selectedFileName ? 'File selezionato' : 'oppure' }}</small><span class="file-button">Seleziona un file</span><small>Formati supportati: PDF, DOC, DOCX, PNG (max 10 MB)</small></label>
+      <input class="visually-hidden-file" id="document-file" type="file" accept=".pdf,.doc,.docx,.png" (change)="onFileSelected($event)" />
+      <form class="upload-form" [formGroup]="uploadForm" (ngSubmit)="uploadDocument()">
+        <label for="upload-type">Tipo di documento <span>*</span></label>
+        <select id="upload-type" formControlName="documentType"><option>Contratto</option><option>Fattura</option><option>Documento HR</option><option>Policy aziendale</option></select>
+        <label for="upload-description">Descrizione (opzionale)</label>
+        <textarea id="upload-description" rows="2" formControlName="description"></textarea>
+        <button class="upload-submit" type="submit">&#8593; Carica documento <span aria-hidden="true">&#8594;</span></button>
+      </form>
+    </article>
+
+    <article class="upload-card upload-status-card">
+      <header class="upload-card-heading"><h3>&#10003; File ricevuto</h3><p>Controlla lo stato della lavorazione automatica.</p></header>
+      <ol class="processing-list"><li><span>File ricevuto</span><strong>{{ selectedFileName || 'contratto_mario.pdf' }}</strong><b>Completato</b></li><li><span>Controllo del file</span><strong>Formato e sicurezze verificati</strong><b>Completato</b></li><li><span>Rinomina automatica</span><strong>contratto_mario_2025-09-18.pdf</strong><b>Completato</b></li><li><span>Classificazione</span><strong>Cartella: Risorse Umane / Contratti</strong><b>Completato</b></li><li><span>Salvataggio nel cloud</span><strong>Documento archiviato con successo</strong><b>Completato</b></li></ol>
+      <div class="archive-success"><span>&#10003;</span><div><strong>{{ documentArchived ? 'Documento archiviato!' : 'Pronto per archiviare' }}</strong><small>{{ documentArchived ? 'Il file e stato salvato e reso disponibile al team autorizzato.' : 'Seleziona un file per provare il flusso.' }}</small></div></div>
+      <div class="status-actions"><button type="button" (click)="chooseAnotherFile()">Carica un altro file</button><button type="button">Vedi i documenti <span aria-hidden="true">&#8594;</span></button></div>
+    </article>
+
+    <aside class="upload-card archive-card"><header class="upload-card-heading"><h3>&#128193; Documenti archiviati</h3><p>Ecco come viene salvato il documento.</p></header><p class="archive-path">Home <span>&#8250;</span> Risorse Umane <span>&#8250;</span> Contratti</p><ul class="archive-list">@for (document of archivedDocuments; track document.name) {<li><span class="pdf-icon">PDF</span><div><strong>{{ document.name }}</strong><small>{{ document.date }} &#183; {{ document.size }}</small></div>@if ($first) { <b>&#10003;</b> } @else { <b>&#8230;</b> }</li>}</ul><button class="open-folder" type="button">&#128193; Apri cartella</button></aside>
+  </div>
+
+  <footer class="upload-summary"><div class="summary-icon" aria-hidden="true">&#9678;</div><div><strong>Piu tempo per cio che conta.</strong><span>Automatizzare i processi ti permette di lavorare meglio, ridurre gli errori e avere sempre tutto sotto controllo.</span></div><ul><li>Processi piu veloci</li><li>Documenti sempre organizzati</li><li>Maggiore sicurezza</li><li>Team piu produttivo</li></ul><button class="summary-action" type="button">Scopri altre soluzioni nel Lab <span aria-hidden="true">&#8594;</span></button></footer>
+</section>

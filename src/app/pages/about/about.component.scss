@@ -1,0 +1,132 @@
+:host {
+  display: block;
+  background: #f7f3ee;
+}
+
+.about-section {
+  background: #f7f3ee;
+}
+
+.eyebrow {
+  margin: 0 0 1.25rem;
+  color: #312d29;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.18rem;
+}
+
+.about-section h2 {
+  margin: 0 0 1.5rem;
+  color: #171412;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: clamp(2.5rem, 3vw, 4rem);
+  line-height: 1.06;
+  letter-spacing: -0.05em;
+}
+
+.about-section p {
+  color: rgba(29, 25, 22, 0.8);
+  line-height: 1.8;
+  font-size: 1.02rem;
+}
+
+.stats-panel {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+  margin-top: 1rem;
+  padding: 0.9rem;
+  background: rgba(232, 224, 215, 0.5);
+  border-radius: 0.65rem;
+}
+
+.stat-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 0;
+  padding: 0.7rem 0.8rem;
+  background: transparent;
+  border-right: 1px solid rgba(28, 23, 20, 0.1);
+}
+
+.stat-box:last-child {
+  border-right: 0;
+}
+
+.stat-box strong {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 1.8rem;
+  line-height: 1;
+  font-weight: 700;
+  color: #171412;
+}
+
+.stat-box span {
+  margin-top: 0.5rem;
+  color: rgba(29, 25, 22, 0.75);
+  font-size: 0.7rem;
+}
+
+.experience-panel {
+  padding: 0.2rem 0;
+}
+
+.experience-panel h3 {
+  margin: 0 0 0.75rem;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: clamp(1.8rem, 2.2vw, 2.6rem);
+  line-height: 1.05;
+}
+
+.experience-copy {
+  margin-bottom: 1rem;
+  color: rgba(29, 25, 22, 0.8);
+  font-size: 0.9rem;
+  line-height: 1.55;
+}
+
+.sector-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.65rem;
+}
+
+.sector-card {
+  display: flex;
+  align-items: center;
+  min-height: 62px;
+  gap: 0.6rem;
+  padding: 0.65rem;
+  border: 1px solid rgba(28, 23, 20, 0.1);
+  border-radius: 0.55rem;
+  color: rgba(29, 25, 22, 0.85);
+  font-size: 0.75rem;
+}
+
+.sector-icon {
+  display: block;
+  width: 28px;
+  height: 28px;
+  flex: 0 0 28px;
+  object-fit: contain;
+}
+
+@media (max-width: 767.98px) {
+  .stats-panel {
+    grid-template-columns: 1fr;
+  }
+
+  .stat-box {
+    border-right: 0;
+    border-bottom: 1px solid rgba(28, 23, 20, 0.1);
+  }
+
+  .stat-box:last-child {
+    border-bottom: 0;
+  }
+
+  .sector-grid {
+    grid-template-columns: 1fr;
+  }
+}

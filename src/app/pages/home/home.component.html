@@ -1,7 +1,7 @@
 <section id="home" class="hero-section">
   <div class="container hero-container">
     <div class="row align-items-center g-5">
-      <div class="col-12 col-xl-6">
+      <div class="col-12 col-xl-7 hero-content">
         <p class="eyebrow">{{ 'hero.eyebrow' | translate }}</p>
 
         <h1 class="hero-title">
@@ -18,16 +18,16 @@
         </p>
 
         <div class="hero-actions d-flex flex-wrap gap-3">
-          <button class="btn btn-primary hero-btn primary" type="button">
+          <button class="btn btn-primary hero-btn primary" type="button" routerLink="/lab">
             {{ 'hero.ctaPrimary' | translate }}
           </button>
-          <button class="btn btn-outline-dark hero-btn secondary" type="button">
+          <button class="btn btn-outline-dark hero-btn secondary" type="button" routerLink="/contact">
             {{ 'hero.ctaSecondary' | translate }}
           </button>
         </div>
       </div>
 
-      <div class="col-12 col-xl-6">
+      <div class="col-12 col-xl-5">
         <div class="hero-visual">
           <div class="visual-card">
             <img class="hero-photo" src="assets/images/IMG_3348.jpg" alt="Jhon Daniel al lavoro" />
@@ -38,102 +38,11 @@
   </div>
 </section>
 
+<app-about id="about"></app-about>
+
 <app-services id="services"></app-services>
 
-<section id="solutions" class="solutions-section">
-  <div class="container py-5">
-    <div class="row align-items-start g-5">
-      <div class="col-12 col-lg-6">
-        <p class="eyebrow">{{ 'solutions.eyebrow' | translate }}</p>
-        <h2>{{ 'solutions.title' | translate }}</h2>
-        <p class="solutions-copy">
-          {{ 'solutions.text' | translate }}
-        </p>
-        <p class="solutions-copy">
-          {{ 'solutions.extra' | translate }}
-        </p>
-        <div class="highlight-box">
-          {{ 'solutions.highlight' | translate }}
-        </div>
-      </div>
-
-      <div class="col-12 col-lg-6">
-        <p class="eyebrow">{{ 'solutions.techEyebrow' | translate }}</p>
-        <h2 class="tech-heading">{{ 'solutions.techTitle' | translate }}</h2>
-        <div class="tech-grid">
-          <div class="tech-item tech-item-brand"><img src="assets/icons/icons-logo-angular.png" alt="Angular" /><span>{{ 'solutions.tech.0' | translate }}</span></div>
-          <div class="tech-item tech-item-brand"><img src="assets/icons/icons-logo-spring-boot.png" alt="Spring Boot" /><span>{{ 'solutions.tech.1' | translate }}</span></div>
-          <div class="tech-item tech-item-brand"><img src="assets/icons/icons-postgresql.png" alt="PostgreSQL" /><span>{{ 'solutions.tech.2' | translate }}</span></div>
-          <div class="tech-item tech-item-brand"><img src="assets/icons/icons-aws.png" alt="AWS" /><span>{{ 'solutions.tech.3' | translate }}</span></div>
-          <div class="tech-item tech-item-feature"><img src="assets/icons/icon-security.png.png" alt="Sicurezza" /><span>{{ 'solutions.tech.4' | translate }}</span></div>
-          <div class="tech-item tech-item-feature"><img src="assets/icons/icon-scalabilita.png.png" alt="Scalabilità" /><span>{{ 'solutions.tech.5' | translate }}</span></div>
-          <div class="tech-item tech-item-feature"><img src="assets/icons/icon-flessibilita.png" alt="Flessibilità" /><span>{{ 'solutions.tech.6' | translate }}</span></div>
-          <div class="tech-item tech-item-feature"><img src="assets/icons/icon-integrazione.png" alt="Integrazione" /><span>{{ 'solutions.tech.7' | translate }}</span></div>
-        </div>
-        <div class="growth-panel">
-          <h3>{{ 'solutions.growthTitle' | translate }}</h3>
-          <div class="growth-steps">
-            <div><strong>{{ 'solutions.growthToday' | translate }}</strong><span>{{ 'solutions.growthTodayText' | translate }}</span></div>
-            <span class="growth-arrow">→</span>
-            <div><strong>{{ 'solutions.growthTomorrow' | translate }}</strong><span>{{ 'solutions.growthTomorrowText' | translate }}</span></div>
-            <span class="growth-arrow">→</span>
-            <div><strong>{{ 'solutions.growthFuture' | translate }}</strong><span>{{ 'solutions.growthFutureText' | translate }}</span></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="about" class="about-section">
-  <div class="container py-5">
-    <div class="row align-items-center g-5">
-      <div class="col-12 col-lg-5">
-        <p class="eyebrow">{{ 'about.eyebrow' | translate }}</p>
-        <h2>{{ 'about.title' | translate }}</h2>
-        <p>
-          {{ 'about.p1' | translate }}
-        </p>
-        <p>
-          {{ 'about.p2' | translate }}
-        </p>
-        <button class="btn btn-dark px-4 py-2 mt-3" type="button">{{ 'about.cta' | translate }}</button>
-      </div>
-
-      <div class="col-12 col-lg-7">
-        <div class="experience-panel">
-          <p class="eyebrow">{{ 'experience.eyebrow' | translate }}</p>
-          <h3>{{ 'experience.title' | translate }}</h3>
-          <p class="experience-copy">{{ 'experience.text' | translate }}</p>
-
-          <div class="sector-grid">
-            <div class="sector-card"><img class="sector-icon" src="assets/icons/icons-government.png" alt="Pubblica Amministrazione" /><span>{{ 'experience.sectors.public' | translate }}</span></div>
-            <div class="sector-card"><img class="sector-icon" src="assets/icons/icons-bank.png" alt="Banking" /><span>{{ 'experience.sectors.banking' | translate }}</span></div>
-            <div class="sector-card"><img class="sector-icon" src="assets/icons/icons-shield.png" alt="Assicurazioni" /><span>{{ 'experience.sectors.insurance' | translate }}</span></div>
-            <div class="sector-card"><img class="sector-icon" src="assets/icons/icons-factory.png" alt="Industria" /><span>{{ 'experience.sectors.industry' | translate }}</span></div>
-            <div class="sector-card"><img class="sector-icon" src="assets/icons/icons-bolt.png" alt="Energia e E-Mobility" /><span>{{ 'experience.sectors.energy' | translate }}</span></div>
-            <div class="sector-card"><img class="sector-icon" src="assets/icons/icons-briefcase-settings.png" alt="Gestionali aziendali" /><span>{{ 'experience.sectors.business' | translate }}</span></div>
-          </div>
-
-          <div class="stats-panel">
-            <div class="stat-box">
-              <strong>5+</strong>
-              <span>{{ 'stats.years' | translate }}</span>
-            </div>
-            <div class="stat-box">
-              <strong>6</strong>
-              <span>{{ 'stats.sectors' | translate }}</span>
-            </div>
-            <div class="stat-box">
-              <strong>Web + Mobile</strong>
-              <span>{{ 'stats.web' | translate }}</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+<app-solutions id="solutions"></app-solutions>
 
 <section id="lab" class="lab-section">
   <div class="container py-5">
@@ -144,7 +53,7 @@
       </div>
 
       <div class="col-12 col-lg-5 text-lg-end">
-        <button class="btn btn-outline-dark px-4 py-2" type="button" (click)="openLabModal()">
+        <button class="btn btn-outline-dark px-4 py-2" type="button" routerLink="/lab">
           {{ 'lab.cta' | translate }}
         </button>
       </div>
