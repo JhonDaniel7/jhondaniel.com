@@ -1,0 +1,18 @@
+<section class="document-test" aria-labelledby="document-test-title">
+  <article class="document-form-card">
+    <header class="document-card-heading"><h2 id="document-test-title">Dati del documento</h2><p>Inserisci le informazioni per generare il tuo PDF.</p></header>
+    <form class="document-form" [formGroup]="documentForm" (ngSubmit)="generateDocument()">
+      <label for="document-type">Tipo di documento</label><select id="document-type" formControlName="type"><option>Preventivo</option><option>Fattura</option><option>Report</option></select>
+      <label for="document-client-name">Nome cliente <span>*</span></label><input id="document-client-name" type="text" formControlName="clientName" />
+      <label for="document-client-email">Email cliente</label><input id="document-client-email" type="email" formControlName="clientEmail" />
+      <label for="document-subject">Oggetto</label><input id="document-subject" type="text" formControlName="subject" />
+      <label for="document-description">Descrizione</label><textarea id="document-description" rows="3" formControlName="description"></textarea>
+      <div class="document-inline-fields"><div><label for="document-amount">Importo</label><div class="amount-input"><input id="document-amount" type="text" formControlName="amount" /><span>EUR</span></div></div><div><label for="document-vat">IVA</label><select id="document-vat" formControlName="vat"><option>22%</option><option>10%</option><option>Esente</option></select></div></div>
+      <button class="demo-submit document-submit" type="submit">Genera PDF <span aria-hidden="true">&#8594;</span></button>
+    </form>
+  </article>
+  <article class="document-preview-card"><header class="document-card-heading preview-heading"><div><h2>Anteprima del documento</h2><p>Ecco come sara il tuo PDF.</p></div><button class="preview-button" type="button" (click)="generateDocument()">&#9673; Anteprima aggiornata</button></header>
+    <div class="document-preview"><div class="preview-topline"><div><strong>JD</strong><span>JHON DANIEL<br /><small>Software Developer</small></span></div><div><strong>{{ documentForm.controls.type.value }}</strong><span>N. 2025-001<br />Data: 18/09/2025</span></div></div><hr /><div class="preview-columns"><p><strong>Cliente</strong><br />{{ documentForm.controls.clientName.value }}<br />{{ documentForm.controls.clientEmail.value }}</p><p><strong>Da</strong><br />Jhon Daniel<br />www.jhondaniel.com</p></div><p><strong>Oggetto</strong><br />{{ documentForm.controls.subject.value }}</p><div class="preview-table"><span>Descrizione</span><span>Q.ta</span><span>Prezzo unitario</span><span>Totale</span><p>{{ documentForm.controls.description.value }}</p><p>1</p><p>{{ documentForm.controls.amount.value }} EUR</p><p>{{ documentForm.controls.amount.value }} EUR</p></div><div class="preview-total"><span>Subtotale</span><strong>{{ documentForm.controls.amount.value }} EUR</strong><span>IVA ({{ documentForm.controls.vat.value }})</span><strong>330,00 EUR</strong><span>Totale</span><strong>1.830,00 EUR</strong></div><p class="preview-thanks">Grazie per la fiducia!<br /><strong>Jhon Daniel</strong></p></div>
+  </article>
+</section>
+@if (documentGenerated) { <div class="document-success" role="status"><span>&#10003;</span><div><strong>PDF generato con successo!</strong><small>Il tuo documento e pronto per essere scaricato.</small></div><button type="button" (click)="downloadDocument()">Scarica PDF <span aria-hidden="true">&#8595;</span></button></div> }

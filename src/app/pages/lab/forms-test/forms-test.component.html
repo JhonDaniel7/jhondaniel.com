@@ -1,0 +1,27 @@
+<div class="form-comparison">
+  <article class="demo-card basic-card">
+    <header class="demo-card-header"><span class="state-icon state-error" aria-hidden="true">x</span><div><h2>Formulario poco chiaro</h2><p>Senza validazioni in tempo reale, l'utente non sa cosa c'e che non va.</p></div></header>
+    <form class="demo-form" [formGroup]="basicForm" (ngSubmit)="submitBasicForm()" novalidate>
+      <label for="basic-name">Nome</label><input id="basic-name" type="text" formControlName="name" />
+      <label for="basic-email">Email</label><input id="basic-email" type="text" formControlName="email" />
+      <label for="basic-phone">Telefono</label><input id="basic-phone" type="text" formControlName="phone" />
+      <label for="basic-password">Password</label><input id="basic-password" type="password" formControlName="password" />
+      <button class="demo-submit" type="submit">Invia</button>
+    </form>
+    @if (basicSubmitted) { <div class="form-result result-error" role="status"><strong>Errore. Dati non validi.</strong><span>Controlla le informazioni inserite e riprova.</span></div> }
+    <div class="demo-caption"><strong>Risultato?</strong><span>L'utente non capisce cosa deve correggere e si sente frustrato.</span></div>
+  </article>
+  <article class="demo-card smart-card">
+    <header class="demo-card-header"><span class="state-icon state-success" aria-hidden="true">&#10003;</span><div><h2>Formulario intelligente</h2><p>Validazioni in tempo reale, messaggi chiari e un'esperienza fluida.</p></div></header>
+    <form class="demo-form smart-form" [formGroup]="smartForm" (ngSubmit)="submitSmartForm()" novalidate>
+      <label for="smart-name">Nome e cognome</label><div class="input-state" [class.is-valid]="smartForm.controls.name.valid"><input id="smart-name" type="text" formControlName="name" />@if (smartForm.controls.name.valid) { <span class="field-icon">&#10003;</span> }</div>
+      <label for="smart-email">Email</label><div class="input-state" [class.is-invalid]="hasSmartError('email')"><input id="smart-email" type="email" formControlName="email" />@if (hasSmartError('email')) { <span class="field-icon">!</span> }</div>
+      @if (hasSmartError('email')) { <p class="field-error">Inserisci un indirizzo email valido.<br /><span>Esempio: nome@azienda.it</span></p> }
+      <label for="smart-phone">Telefono</label><div class="input-state" [class.is-invalid]="hasSmartError('phone')"><input id="smart-phone" type="tel" formControlName="phone" /></div>
+      @if (hasSmartError('phone')) { <p class="field-error">Il numero di telefono deve essere di almeno 9 cifre.</p> }
+      <label for="smart-password">Password</label><div class="input-state" [class.is-valid]="smartForm.controls.password.valid"><input id="smart-password" type="password" formControlName="password" />@if (smartForm.controls.password.valid) { <span class="field-icon">&#10003;</span> }</div>
+      <ul class="password-rules"><li [class.rule-valid]="meetsPasswordRule('length')">&#10003; Almeno 8 caratteri</li><li [class.rule-valid]="meetsPasswordRule('uppercase')">&#10003; Almeno una lettera maiuscola</li><li [class.rule-valid]="meetsPasswordRule('number')">&#10003; Almeno un numero</li></ul>
+      <button class="demo-submit" type="submit">Continua <span aria-hidden="true">&#8594;</span></button>
+    </form>
+  </article>
+</div>

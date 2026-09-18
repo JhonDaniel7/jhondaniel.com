@@ -10,6 +10,10 @@ export const routes: Routes = [
     loadChildren: () => import('./pages/contacts/contacts.module').then((m) => m.ContactsModule),
   },
   {
+    path: 'lab',
+    loadChildren: () => import('./pages/lab/lab.module').then((m) => m.LabModule),
+  },
+  {
     path: '**',
     redirectTo: '',
   },

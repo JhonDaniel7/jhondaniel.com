@@ -1,0 +1,25 @@
+<section class="customer-test" aria-labelledby="customer-test-title">
+  <div class="customer-heading">
+    <div>
+      <p class="eyebrow">GESTIONE DATI</p>
+      <h2 id="customer-test-title">1.000 clienti.<br />Tutto sotto controllo.</h2>
+      <p>Quando i dati aumentano, trovare quello che serve deve rimanere semplice.<br />Cerca, filtra e organizza migliaia di informazioni in pochi secondi.</p>
+    </div>
+    <div class="customer-features"><div><span>⌕</span><strong>Ricerca veloce</strong><small>Trova subito quello che ti serve</small></div><div><span>☷</span><strong>Filtri avanzati</strong><small>Combina piu criteri di ricerca</small></div><div><span>◉</span><strong>Gestione grandi dati</strong><small>Anche con migliaia di record</small></div><div><span>ϟ</span><strong>Veloce e reattiva</strong><small>Un'esperienza fluida e immediata</small></div></div>
+  </div>
+
+  <div class="customer-stats"><div><span>♙</span><strong>{{ customers.length | number }}</strong><small>clienti totali</small></div><div><span>▽</span><strong>{{ filteredCustomers.length | number }}</strong><small>risultati mostrati</small></div><div><span>▱</span><strong>{{ pageSize }}</strong><small>elementi per pagina</small></div><div class="csv-callout"><span>☁</span><div><strong>{{ csvLoaded ? 'CSV caricato' : 'Vuoi provare con i tuoi dati?' }}</strong><small>Carica un file CSV (nome, cognome, telefono, data di nascita)</small></div><label class="csv-button">Carica CSV<input type="file" accept=".csv" (change)="loadCsv($event)" /></label></div></div>
+
+  <div class="customer-panel">
+    <div class="customer-filters">
+      <label class="search-field"><span>⌕</span><input #search type="search" [value]="searchTerm" (input)="setSearchTerm(search.value)" placeholder="Cerca per nome, cognome o numero di telefono..." /><button type="button" aria-label="Cancella ricerca" (click)="setSearchTerm(''); search.value = ''">×</button></label>
+      <select [(ngModel)]="genderFilter" (change)="setFilters()" aria-label="Filtra per genere"><option value="all">♙ Tutti i generi</option><option value="Maschio">Maschio</option><option value="Femmina">Femmina</option></select>
+      <select [(ngModel)]="ageFilter" (change)="setFilters()" aria-label="Filtra per eta"><option value="all">▣ Tutte le eta</option><option value="young">Meno di 30</option><option value="adult">Da 30 a 49</option><option value="senior">50 o piu</option></select>
+      <button class="reset-button" type="button" (click)="resetFilters()">↻ Reimposta filtri</button>
+    </div>
+
+    <div class="table-scroll"><table><thead><tr><th><input type="checkbox" aria-label="Seleziona tutti" /></th><th><button type="button" (click)="sortBy('nome')">Nome ↕</button></th><th><button type="button" (click)="sortBy('cognome')">Cognome ↕</button></th><th><button type="button" (click)="sortBy('telefono')">Telefono ↕</button></th><th><button type="button" (click)="sortBy('dataNascita')">Data di nascita ↕</button></th><th>Eta</th><th><button type="button" (click)="sortBy('genere')">Genere ↕</button></th><th>Azioni</th></tr></thead><tbody>@for (customer of visibleCustomers; track customer.id) {<tr><td><input type="checkbox" [attr.aria-label]="'Seleziona ' + customer.nome + ' ' + customer.cognome" /></td><td><span class="avatar">{{ customer.nome.charAt(0) }}{{ customer.cognome.charAt(0) }}</span><strong>{{ customer.nome }}</strong></td><td>{{ customer.cognome }}</td><td>{{ customer.telefono }}</td><td>{{ formatDate(customer.dataNascita) }}</td><td>{{ getAge(customer.dataNascita) }}</td><td><span class="gender-dot" [class.female]="customer.genere === 'Femmina'"></span>{{ customer.genere }}</td><td><button class="more-button" type="button" aria-label="Azioni cliente">...</button></td></tr>} @empty {<tr><td class="empty-row" colspan="8">Nessun cliente trovato.</td></tr>}</tbody></table></div>
+
+    <footer class="customer-pagination"><span>Mostrati {{ firstVisibleIndex }}–{{ lastVisibleIndex }} di {{ filteredCustomers.length | number }} clienti</span><div><button type="button" [disabled]="currentPage === 1" (click)="changePage(currentPage - 1)">‹</button>@for (page of [1, 2, 3, 4, 5]; track page) { @if (page <= totalPages) { <button type="button" [class.active]="currentPage === page" (click)="changePage(page)">{{ page }}</button> } }<button type="button" [disabled]="currentPage === totalPages" (click)="changePage(currentPage + 1)">›</button></div><select [value]="pageSize" (change)="changePageSize(pageSizeSelect.value)" #pageSizeSelect aria-label="Elementi per pagina"><option value="10">10 per pagina</option><option value="25">25 per pagina</option><option value="50">50 per pagina</option></select></footer>
+  </div>
+</section>
