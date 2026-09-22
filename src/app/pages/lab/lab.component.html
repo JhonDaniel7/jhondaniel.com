@@ -3,13 +3,14 @@
     <div class="container lab-container">
       <div class="lab-heading-row">
         <div>
-          <p class="eyebrow">{{ 'lab.document.eyebrow' | translate }}</p>
-          <h1 id="lab-title">{{ 'lab.document.title' | translate }}</h1>
-          <p class="lab-intro">{{ 'lab.document.intro' | translate }}</p>
+          <p class="eyebrow">{{ 'lab.eyebrow' | translate }}</p>
+          <h1 id="lab-title">{{ 'lab.title' | translate }}</h1>
+          <p class="lab-intro">{{ 'lab.intro' | translate }}</p>
         </div>
         <aside class="lab-tip"><span class="tip-icon" aria-hidden="true">i</span><div><h2>{{ 'lab.document.tipTitle' | translate }}</h2><p>{{ 'lab.document.tipText' | translate }}</p></div></aside>
       </div>
 
+      <div class="lab-divider" role="separator"><span>{{ 'lab.tests.first' | translate }}</span></div>
       <app-pdf-test></app-pdf-test>
       <div class="lab-divider" role="separator"><span>{{ 'lab.tests.second' | translate }}</span></div>
       <app-forms-test></app-forms-test>
