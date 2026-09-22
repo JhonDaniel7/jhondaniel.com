@@ -150,6 +150,7 @@
     "successMessage": "Gracias por contactar. Te responderé lo antes posible.",
     "successClose": "Cerrar",
     "modalClose": "Cerrar",
-    "quote": "Las mejores ideas nacen de las conversaciones adecuadas."
+    "quote": "Las mejores ideas nacen de las conversaciones adecuadas.",
+    "sending": "Enviando..."
   }
 }
