@@ -149,6 +149,7 @@
     "successMessage": "Thank you for getting in touch. I’ll get back to you as soon as possible.",
     "successClose": "Close",
     "modalClose": "Close",
-    "quote": "The best ideas come from the right conversations."
+    "quote": "The best ideas come from the right conversations.",
+    "sending": "Sending..."
   }
 }

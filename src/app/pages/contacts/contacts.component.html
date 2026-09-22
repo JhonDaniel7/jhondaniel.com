@@ -79,8 +79,8 @@
             </label>
 
             <div class="form-footer">
-              <button class="contact-submit" type="submit" [disabled]="contactForm.invalid">
-                {{ 'contact.submit' | translate }} <span>→</span>
+              <button class="contact-submit" type="submit" [disabled]="contactForm.invalid || isSending">
+                {{ isSending ? 'contact.sending' : 'contact.submit' | translate }} <span>→</span>
               </button>
               <small>{{ 'contact.privacy' | translate }}</small>
             </div>

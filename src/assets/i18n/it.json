@@ -149,6 +149,7 @@
     "successMessage": "Grazie per avermi contattato. Ti risponderò il prima possibile.",
     "successClose": "Chiudi",
     "modalClose": "Chiudi",
-    "quote": "Le idee migliori nascono dalle giuste conversazioni."
+    "quote": "Le idee migliori nascono dalle giuste conversazioni.",
+    "sending": "Invio in corso..."
   }
 }
