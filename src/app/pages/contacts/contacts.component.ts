@@ -1,6 +1,8 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component, DestroyRef, OnDestroy } from '@angular/core';
 import { FormBuilder, ReactiveFormsModule, Validators } from '@angular/forms';
 import { TranslateModule } from '@ngx-translate/core';
+import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
+import { finalize } from 'rxjs';
 
 import { SharedModule } from '../../shared/shared.module';
 import { RecaptchaService } from 'src/app/shared/services/recaptcha.service';
@@ -14,7 +16,7 @@ import { ContactService } from 'src/app/shared/services/contact.service';
   styleUrl: './contacts.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class ContactsComponent {
+export class ContactsComponent implements OnDestroy {
   submitted = false;
   isSuccessModalOpen = false;
 
@@ -45,7 +47,8 @@ export class ContactsComponent {
   constructor(
     private readonly formBuilder: FormBuilder,
     private readonly recaptchaService: RecaptchaService,
-    private readonly contactService: ContactService
+    private readonly contactService: ContactService,
+    private readonly destroyRef: DestroyRef
   ) {}
 
 
@@ -81,17 +84,20 @@ export class ContactsComponent {
       };
 
       // 3. Inviamo alla Lambda
-      this.contactService.sendMessage(payload).subscribe({
+      this.contactService.sendMessage(payload).pipe(
+        takeUntilDestroyed(this.destroyRef),
+        finalize(() => {
+          this.isSending = false;
+        })
+      ).subscribe({
         next: () => {
           this.isSuccessModalOpen = true;
           this.contactForm.reset();
           this.submitted = false;
-          this.isSending = false;
         },
 
         error: (error) => {
           console.error('Errore durante invio form:', error);
-          this.isSending = false;
         },
       });
 
@@ -103,6 +109,12 @@ export class ContactsComponent {
 
   closeSuccessModal(): void {
     this.isSuccessModalOpen = false;
+  }
+
+  ngOnDestroy(): void {
+    this.submitted = false;
+    this.isSuccessModalOpen = false;
+    this.isSending = false;
   }
 
   hasError(controlName: string): boolean {
